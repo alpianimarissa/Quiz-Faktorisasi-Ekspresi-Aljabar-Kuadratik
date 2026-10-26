@@ -235,337 +235,36 @@
                 userAnswers: {},
                 score: 0,
                 answeredCount: 0,
-                storageKey: 'algebra_quiz_30_answers_v1',
-
-                // 30 Fresh & Varied Quadratic Factorization Questions (Distributed Options: A=8, B=8, C=7, D=7)
-                questions: [
-                    {
-                        id: 1,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Dasar",
-                        question: "Faktorkanlah bentuk kuadratik berikut: \\(x^2 + 9x + 20\\)",
-                        options: ["\\((x + 2)(x + 10)\\)", "\\((x + 4)(x + 5)\\)", "\\((x + 1)(x + 20)\\)", "\\((x + 3)(x + 6)\\)"],
-                        correct: 1, // B
-                        explanation: "Cari dua angka yang jika dikalikan hasilnya = 20 dan jika dijumlahkan hasilnya = 9.<br>Angka yang memenuhi adalah <b>4</b> dan <b>5</b> (\\(4 \\times 5 = 20\\), \\(4 + 5 = 9\\)).<br>Maka faktornya adalah <b>\\((x + 4)(x + 5)\\)</b>."
-                    },
-                    {
-                        id: 2,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Dasar",
-                        question: "Bentuk faktorisasi dari \\(x^2 - 8x + 15\\) adalah...",
-                        options: ["\\((x - 3)(x - 5)\\)", "\\((x + 3)(x + 5)\\)", "\\((x - 1)(x - 15)\\)", "\\((x - 2)(x - 6)\\)"],
-                        correct: 0, // A
-                        explanation: "Hasil kali = +15 dan jumlah = -8.<br>Karena hasil kali positif dan jumlah negatif, kedua angka harus negatif: <b>-3</b> dan <b>-5</b>.<br>Maka faktornya adalah <b>\\((x - 3)(x - 5)\\)</b>."
-                    },
-                    {
-                        id: 3,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah bentuk: \\(x^2 + 4x - 21\\)",
-                        options: ["\\((x - 7)(x + 3)\\)", "\\((x + 2)(x - 10)\\)", "\\((x + 7)(x - 3)\\)", "\\((x + 21)(x - 1)\\)"],
-                        correct: 2, // C
-                        explanation: "Hasil kali = -21 dan jumlah = +4.<br>Dua angka yang cocok adalah <b>+7</b> dan <b>-3</b> (\\(7 \\times (-3) = -21\\), \\(7 + (-3) = 4\\)).<br>Maka faktornya adalah <b>\\((x + 7)(x - 3)\\)</b>."
-                    },
-                    {
-                        id: 4,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Hasil faktorisasi dari \\(x^2 - 5x - 24\\) adalah...",
-                        options: ["\\((x - 4)(x + 6)\\)", "\\((x + 3)(x - 8)\\)", "\\((x - 3)(x + 8)\\)", "\\((x - 12)(x + 2)\\)"],
-                        correct: 1, // B
-                        explanation: "Hasil kali = -24 dan jumlah = -5.<br>Pasangan angka yang tepat adalah <b>+3</b> dan <b>-8</b> (\\(3 \\times (-8) = -24\\), \\(3 + (-8) = -5\\)).<br>Maka faktornya adalah <b>\\((x + 3)(x - 8)\\)</b>."
-                    },
-                    {
-                        id: 5,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah bentuk aljabar: \\(2x^2 + 7x + 5\\)",
-                        options: ["\\((2x + 1)(x + 5)\\)", "\\((x + 1)(2x + 5)\\)", "\\((2x + 2)(x + 3)\\)", "\\((2x + 7)(x + 1)\\)"],
-                        correct: 1, // B
-                        explanation: "1. \\(a \\times c = 2 \\times 5 = 10\\).<br>2. Angka yang dikalikan = 10 dan dijumlahkan = 7 adalah <b>2 dan 5</b>.<br>3. Pecah suku tengah: \\(2x^2 + 2x + 5x + 5\\).<br>4. Kelompokkan: \\(2x(x + 1) + 5(x + 1) = \\mathbf{(x + 1)(2x + 5)}\\)."
-                    },
-                    {
-                        id: 6,
-                        category: "Selisih Kuadrat",
-                        difficulty: "Dasar",
-                        question: "Faktorkan bentuk selisih dua kuadrat: \\(x^2 - 49\\)",
-                        options: ["\\((x - 7)(x - 7)\\)", "\\((x + 7)(x + 7)\\)", "\\((x + 7)(x - 7)\\)", "\\((x - 49)(x + 1)\\)"],
-                        correct: 2, // C
-                        explanation: "Ingat rumus selisih dua kuadrat: \\(a^2 - b^2 = (a + b)(a - b)\\).<br>Karena \\(49 = 7^2\\), maka \\(x^2 - 49 = \\mathbf{(x + 7)(x - 7)}\\)."
-                    },
-                    {
-                        id: 7,
-                        category: "Kuadrat Sempurna",
-                        difficulty: "Sedang",
-                        question: "Bentuk kuadrat sempurna \\(x^2 + 12x + 36\\) jika difaktorkan menjadi...",
-                        options: ["\\((x + 6)^2\\)", "\\((x - 6)^2\\)", "\\((x + 4)(x + 9)\\)", "\\((x + 12)(x + 3)\\)"],
-                        correct: 0, // A
-                        explanation: "Dua angka yang dikalikan = 36 dan dijumlahkan = 12 adalah 6 dan 6.<br>Maka faktornya adalah \\((x + 6)(x + 6) = \\mathbf{(x + 6)^2}\\)."
-                    },
-                    {
-                        id: 8,
-                        category: "FPB & Kuadratik Kombinasi",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah secara lengkap: \\(3x^2 + 18x + 24\\)",
-                        options: ["\\((3x + 6)(x + 4)\\)", "\\(3(x + 2)(x + 4)\\)", "\\(3(x + 1)(x + 8)\\)", "\\((3x + 12)(x + 2)\\)"],
-                        correct: 1, // B
-                        explanation: "Faktorkan FPB (yaitu 3) terlebih dahulu:<br>\\(3(x^2 + 6x + 8)\\).<br>Lalu faktorkan \\(x^2 + 6x + 8\\) menjadi \\((x + 2)(x + 4)\\).<br>Hasil akhir = <b>\\(3(x + 2)(x + 4)\\)</b>."
-                    },
-                    {
-                        id: 9,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah: \\(3x^2 - 10x + 8\\)",
-                        options: ["\\((3x - 4)(x - 2)\\)", "\\((3x - 2)(x - 4)\\)", "\\((3x - 8)(x - 1)\\)", "\\((3x + 2)(x - 4)\\)"],
-                        correct: 0, // A
-                        explanation: "1. \\(a \\times c = 3 \\times 8 = 24\\).<br>2. Dua angka yang dikalikan = 24 dan dijumlahkan = -10 adalah <b>-6 dan -4</b>.<br>3. Pecah suku tengah: \\(3x^2 - 6x - 4x + 8 = 3x(x - 2) - 4(x - 2)\\).<br>4. Hasil akhir = <b>\\((3x - 4)(x - 2)\\)</b>."
-                    },
-                    {
-                        id: 10,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Dasar",
-                        question: "Faktorkanlah bentuk kuadratik: \\(x^2 - 9x + 14\\)",
-                        options: ["\\((x - 1)(x - 14)\\)", "\\((x + 2)(x + 7)\\)", "\\((x - 2)(x - 7)\\)", "\\((x - 3)(x - 6)\\)"],
-                        correct: 2, // C
-                        explanation: "Hasil kali = +14 dan jumlah = -9.<br>Angka yang cocok adalah <b>-2</b> dan <b>-7</b>.<br>Maka faktornya = <b>\\((x - 2)(x - 7)\\)</b>."
-                    },
-                    {
-                        id: 11,
-                        category: "Selisih Kuadrat",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah bentuk: \\(4x^2 - 25\\)",
-                        options: ["\\((2x - 5)^2\\)", "\\((4x - 5)(x + 5)\\)", "\\((2x + 5)(2x - 5)\\)", "\\((2x + 25)(2x - 1)\\)"],
-                        correct: 2, // C
-                        explanation: "Bentuk selisih dua kuadrat \\(a^2 - b^2\\) dengan \\(a = 2x\\) dan \\(b = 5\\).<br>\\((2x)^2 - (5)^2 = \\mathbf{(2x + 5)(2x - 5)}\\)."
-                    },
-                    {
-                        id: 12,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah: \\(x^2 + 3x - 40\\)",
-                        options: ["\\((x - 5)(x + 8)\\)", "\\((x + 5)(x - 8)\\)", "\\((x + 4)(x - 10)\\)", "\\((x - 2)(x + 20)\\)"],
-                        correct: 0, // A
-                        explanation: "Hasil kali = -40 dan jumlah = +3.<br>Angka yang tepat adalah <b>+8</b> dan <b>-5</b>.<br>Maka faktornya = <b>\\((x - 5)(x + 8)\\)</b>."
-                    },
-                    {
-                        id: 13,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Bentuk faktorisasi dari \\(2x^2 - x - 6\\) adalah...",
-                        options: ["\\((2x - 3)(x + 2)\\)", "\\((2x + 3)(x - 2)\\)", "\\((2x - 6)(x + 1)\\)", "\\((2x + 1)(x - 6)\\)"],
-                        correct: 1, // B
-                        explanation: "1. \\(a \\times c = 2 \\times (-6) = -12\\).<br>2. Dikalikan = -12, dijumlahkan = -1 ➔ <b>-4 dan +3</b>.<br>3. \\(2x^2 - 4x + 3x - 6 = 2x(x - 2) + 3(x - 2) = \\mathbf{(2x + 3)(x - 2)}\\)."
-                    },
-                    {
-                        id: 14,
-                        category: "Konsep Luas Geometri",
-                        difficulty: "Sedang",
-                        question: "Sebuah bidang berbentuk persegi panjang memiliki luas \\(x^2 + 11x + 28\\). Panjang dan lebarnya berturut-turut adalah...",
-                        options: ["\\((x + 2)\\) dan \\((x + 14)\\)", "\\((x + 3)\\) dan \\((x + 8)\\)", "\\((x + 4)\\) dan \\((x + 7)\\)", "\\((x + 1)\\) dan \\((x + 28)\\)"],
-                        correct: 2, // C
-                        explanation: "Faktorkan luas tanah \\(x^2 + 11x + 28\\):<br>Dikalikan = 28, dijumlahkan = 11 ➔ <b>4 dan 7</b>.<br>Maka ukuran panjang dan lebar adalah <b>\\((x + 4)\\) dan \\((x + 7)\\)</b>."
-                    },
-                    {
-                        id: 15,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Dasar",
-                        question: "Faktorkanlah: \\(x^2 - 10x + 25\\)",
-                        options: ["\\((x - 5)^2\\)", "\\((x + 5)^2\\)", "\\((x - 25)(x - 1)\\)", "\\((x - 2)(x - 8)\\)"],
-                        correct: 0, // A
-                        explanation: "Bentuk kuadrat sempurna: dikalikan = 25, dijumlahkan = -10.<br>Angka yang memenuhi = -5 dan -5.<br>Maka faktornya = \\((x - 5)(x - 5) = \\mathbf{(x - 5)^2}\\)."
-                    },
-                    {
-                        id: 16,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah bentuk kuadratik: \\(5x^2 + 13x - 6\\)",
-                        options: ["\\((5x - 3)(x + 2)\\)", "\\((5x - 2)(x + 3)\\)", "\\((5x + 3)(x - 2)\\)", "\\((5x + 1)(x - 6)\\)"],
-                        correct: 1, // B
-                        explanation: "1. \\(a \\times c = 5 \\times (-6) = -30\\).<br>2. Dikalikan = -30, dijumlahkan = +13 ➔ <b>+15 dan -2</b>.<br>3. \\(5x^2 + 15x - 2x - 6 = 5x(x + 3) - 2(x + 3) = \\mathbf{(5x - 2)(x + 3)}\\)."
-                    },
-                    {
-                        id: 17,
-                        category: "FPB & Kuadratik Kombinasi",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah bentuk: \\(2x^2 - 18\\)",
-                        options: ["\\((2x - 9)(x + 2)\\)", "\\(2(x - 3)^2\\)", "\\(2(x + 3)(x - 3)\\)", "\\((2x + 6)(x - 3)\\)"],
-                        correct: 2, // C
-                        explanation: "Keluarkann FPB = 2 terlebih dahulu:<br>\\(2(x^2 - 9)\\).<br>Lalu gunakan selisih kuadrat untuk \\(x^2 - 9 = (x + 3)(x - 3)\\).<br>Hasil akhir = <b>\\(2(x + 3)(x - 3)\\)</b>."
-                    },
-                    {
-                        id: 18,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Hasil faktorisasi dari \\(x^2 + x - 30\\) adalah...",
-                        options: ["\\((x + 6)(x - 5)\\)", "\\((x - 6)(x + 5)\\)", "\\((x + 10)(x - 3)\\)", "\\((x - 15)(x + 2)\\)"],
-                        correct: 0, // A
-                        explanation: "Hasil kali = -30 dan jumlah = +1.<br>Angka yang tepat adalah <b>+6</b> dan <b>-5</b>.<br>Maka faktornya = <b>\\((x + 6)(x - 5)\\)</b>."
-                    },
-                    {
-                        id: 19,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah bentuk: \\(4x^2 + 8x + 3\\)",
-                        options: ["\\((4x + 1)(x + 3)\\)", "\\((2x + 1)(2x + 3)\\)", "\\((2x + 3)(x + 1)\\)", "\\((4x + 3)(x + 1)\\)"],
-                        correct: 1, // B
-                        explanation: "1. \\(a \\times c = 4 \\times 3 = 12\\).<br>2. Dikalikan = 12, dijumlahkan = 8 ➔ <b>2 dan 6</b>.<br>3. \\(4x^2 + 2x + 6x + 3 = 2x(2x + 1) + 3(2x + 1) = \\mathbf{(2x + 1)(2x + 3)}\\)."
-                    },
-                    {
-                        id: 20,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah: \\(x^2 - 12x + 27\\)",
-                        options: ["\\((x - 2)(x - 10)\\)", "\\((x + 3)(x + 9)\\)", "\\((x - 1)(x - 27)\\)", "\\((x - 3)(x - 9)\\)"],
-                        correct: 3, // D
-                        explanation: "Hasil kali = +27 dan jumlah = -12.<br>Kedua angka harus negatif: <b>-3</b> dan <b>-9</b>.<br>Maka faktornya = <b>\\((x - 3)(x - 9)\\)</b>."
-                    },
-                    {
-                        id: 21,
-                        category: "Selisih Kuadrat",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah bentuk: \\(9x^2 - 64\\)",
-                        options: ["\\((3x - 8)^2\\)", "\\((9x - 8)(x + 8)\\)", "\\((3x + 8)(3x - 8)\\)", "\\((3x + 64)(3x - 1)\\)"],
-                        correct: 2, // C
-                        explanation: "Bentuk selisih dua kuadrat dengan \\(a = 3x\\) dan \\(b = 8\\).<br>\\((3x)^2 - (8)^2 = \\mathbf{(3x + 8)(3x - 8)}\\)."
-                    },
-                    {
-                        id: 22,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Bentuk faktorisasi dari \\(x^2 - 2x - 35\\) adalah...",
-                        options: ["\\((x - 7)(x + 5)\\)", "\\((x + 7)(x - 5)\\)", "\\((x - 35)(x + 1)\\)", "\\((x - 5)(x - 2)\\)"],
-                        correct: 0, // A
-                        explanation: "Hasil kali = -35 dan jumlah = -2.<br>Angka yang tepat adalah <b>-7</b> dan <b>+5</b>.<br>Maka faktornya = <b>\\((x - 7)(x + 5)\\)</b>."
-                    },
-                    {
-                        id: 23,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah: \\(6x^2 + 7x - 3\\)",
-                        options: ["\\((6x - 1)(x + 3)\\)", "\\((2x + 3)(3x - 1)\\)", "\\((3x + 3)(2x - 1)\\)", "\\((2x - 3)(3x + 1)\\)"],
-                        correct: 1, // B
-                        explanation: "1. \\(a \\times c = 6 \\times (-3) = -18\\).<br>2. Dikalikan = -18, dijumlahkan = +7 ➔ <b>+9 dan -2</b>.<br>3. \\(6x^2 + 9x - 2x - 3 = 3x(2x + 3) - 1(2x + 3) = \\mathbf{(2x + 3)(3x - 1)}\\)."
-                    },
-                    {
-                        id: 24,
-                        category: "FPB & Kuadratik Kombinasi",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah secara menyeluruh: \\(5x^2 - 20x + 20\\)",
-                        options: ["\\(5(x - 2)^2\\)", "\\(5(x + 2)^2\\)", "\\((5x - 10)(x - 2)\\)", "\\(5(x - 4)(x + 1)\\)"],
-                        correct: 0, // A
-                        explanation: "Keluarkan FPB = 5 terlebih dahulu:<br>\\(5(x^2 - 4x + 4)\\).<br>Lalu faktorkan kuadrat sempurna \\(x^2 - 4x + 4 = (x - 2)^2\\).<br>Hasil akhir = <b>\\(5(x - 2)^2\\)</b>."
-                    },
-                    {
-                        id: 25,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Dasar",
-                        question: "Faktorkanlah: \\(x^2 + 10x + 21\\)",
-                        options: ["\\((x + 1)(x + 21)\\)", "\\((x + 2)(x + 10)\\)", "\\((x + 4)(x + 6)\\)", "\\((x + 3)(x + 7)\\)"],
-                        correct: 3, // D
-                        explanation: "Hasil kali = 21 dan jumlah = 10.<br>Angka yang tepat adalah <b>3</b> dan <b>7</b>.<br>Maka faktornya = <b>\\((x + 3)(x + 7)\\)</b>."
-                    },
-                    {
-                        id: 26,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Hasil faktorisasi dari \\(3x^2 + 14x + 8\\) adalah...",
-                        options: ["\\((3x + 2)(x + 4)\\)", "\\((3x + 4)(x + 2)\\)", "\\((3x + 8)(x + 1)\\)", "\\((3x + 1)(x + 8)\\)"],
-                        correct: 0, // A
-                        explanation: "1. \\(a \\times c = 3 \\times 8 = 24\\).<br>2. Dikalikan = 24, dijumlahkan = 14 ➔ <b>2 dan 12</b>.<br>3. \\(3x^2 + 12x + 2x + 8 = 3x(x + 4) + 2(x + 4) = \\mathbf{(3x + 2)(x + 4)}\\)."
-                    },
-                    {
-                        id: 27,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Faktorkanlah: \\(x^2 - 4x - 32\\)",
-                        options: ["\\((x - 8)(x + 4)\\)", "\\((x + 8)(x - 4)\\)", "\\((x - 16)(x + 2)\\)", "\\((x - 2)(x + 16)\\)"],
-                        correct: 0, // A
-                        explanation: "Hasil kali = -32 dan jumlah = -4.<br>Angka yang cocok adalah <b>-8</b> dan <b>+4</b>.<br>Maka faktornya = <b>\\((x - 8)(x + 4)\\)</b>."
-                    },
-                    {
-                        id: 28,
-                        category: "Selisih Kuadrat",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah: \\(16x^2 - 81\\)",
-                        options: ["\\((4x - 9)^2\\)", "\\((4x + 9)(4x - 9)\\)", "\\((16x - 9)(x + 9)\\)", "\\((4x + 81)(4x - 1)\\)"],
-                        correct: 1, // B
-                        explanation: "Selisih dua kuadrat dengan \\(a = 4x\\) dan \\(b = 9\\).<br>\\((4x)^2 - (9)^2 = \\mathbf{(4x + 9)(4x - 9)}\\)."
-                    },
-                    {
-                        id: 29,
-                        category: "Bentuk ax² + bx + c (a ≠ 1)",
-                        difficulty: "Tinggi",
-                        question: "Faktorkanlah: \\(2x^2 - 9x + 10\\)",
-                        options: ["\\((2x - 10)(x - 1)\\)", "\\((2x - 2)(x - 5)\\)", "\\((2x - 5)(x - 2)\\)", "\\((2x + 5)(x - 2)\\)"],
-                        correct: 2, // C
-                        explanation: "1. \\(a \\times c = 2 \\times 10 = 20\\).<br>2. Dikalikan = 20, dijumlahkan = -9 ➔ <b>-4 dan -5</b>.<br>3. \\(2x^2 - 4x - 5x + 10 = 2x(x - 2) - 5(x - 2) = \\mathbf{(2x - 5)(x - 2)}\\)."
-                    },
-                    {
-                        id: 30,
-                        category: "Bentuk x² + bx + c",
-                        difficulty: "Sedang",
-                        question: "Bentuk sederhana dari faktorisasi \\(x^2 + 13x + 36\\) adalah...",
-                        options: ["\\((x + 3)(x + 12)\\)", "\\((x + 2)(x + 18)\\)", "\\((x + 6)(x + 6)\\)", "\\((x + 4)(x + 9)\\)"],
-                        correct: 3, // D
-                        explanation: "Hasil kali = 36 dan jumlah = 13.<br>Angka yang tepat adalah <b>4</b> dan <b>9</b>.<br>Maka faktornya = <b>\\((x + 4)(x + 9)\\)</b>."
-                    }
-                ],
+                storageKey: 'algebra_quiz_30_answers_v2',
 
                 get currentQuestion() {
                     return this.questions[this.currentIdx];
                 },
 
                 initApp() {
-                    this.loadSavedAnswers();
+                    this.loadAnswers();
                     this.renderKaTeX();
                 },
 
-                // LocalStorage Persistent State Handler
-                loadSavedAnswers() {
-                    try {
-                        const saved = localStorage.getItem(this.storageKey);
-                        if (saved) {
-                            this.userAnswers = JSON.parse(saved);
-                            this.recalculateScore();
-                        }
-                    } catch (e) {
-                        console.error("Gagal memuat state dari LocalStorage", e);
-                    }
-                },
-
-                saveAnswers() {
-                    try {
-                        localStorage.setItem(this.storageKey, JSON.stringify(this.userAnswers));
-                    } catch (e) {
-                        console.error("Gagal menyimpan ke LocalStorage", e);
-                    }
-                },
-
-                selectAnswer(qId, oIdx) {
-                    if (this.userAnswers[qId] !== undefined) return;
-                    this.userAnswers[qId] = oIdx;
-                    this.saveAnswers();
-                    this.recalculateScore();
-                    this.renderKaTeX();
-                },
-
-                recalculateScore() {
-                    let sc = 0;
-                    let count = 0;
-                    this.questions.forEach(q => {
-                        if (this.userAnswers[q.id] !== undefined) {
-                            count++;
-                            if (this.userAnswers[q.id] === q.correct) {
-                                sc++;
-                            }
+                renderKaTeX() {
+                    this.$nextTick(() => {
+                        if (window.renderMathInElement) {
+                            window.renderMathInElement(document.getElementById('katex-quiz-container'), {
+                                delimiters: [
+                                    {left: "\\(", right: "\\)", display: false},
+                                    {left: "\\[", right: "\\]", display: true}
+                                ],
+                                throwOnError: false
+                            });
                         }
                     });
-                    this.score = sc;
-                    this.answeredCount = count;
                 },
 
-                jumpToQuestion(index) {
-                    this.currentIdx = index;
+                selectAnswer(questionId, optionIdx) {
+                    if (this.userAnswers[questionId] !== undefined) return;
+                    this.userAnswers[questionId] = optionIdx;
+                    this.calculateScore();
+                    this.saveAnswers();
                     this.renderKaTeX();
                 },
 
@@ -583,29 +282,331 @@
                     }
                 },
 
+                jumpToQuestion(index) {
+                    this.currentIdx = index;
+                    this.renderKaTeX();
+                },
+
+                calculateScore() {
+                    let s = 0;
+                    let count = 0;
+                    this.questions.forEach(q => {
+                        if (this.userAnswers[q.id] !== undefined) {
+                            count++;
+                            if (this.userAnswers[q.id] === q.correct) {
+                                s++;
+                            }
+                        }
+                    });
+                    this.score = s;
+                    this.answeredCount = count;
+                },
+
+                saveAnswers() {
+                    try {
+                        localStorage.setItem(this.storageKey, JSON.stringify(this.userAnswers));
+                    } catch (e) {
+                        console.error("Gagal menyimpan jawaban", e);
+                    }
+                },
+
+                loadAnswers() {
+                    try {
+                        const saved = localStorage.getItem(this.storageKey);
+                        if (saved) {
+                            this.userAnswers = JSON.parse(saved);
+                            this.calculateScore();
+                        }
+                    } catch (e) {
+                        console.error("Gagal memuat jawaban tersimpan", e);
+                    }
+                },
+
                 confirmReset() {
-                    if (confirm("Apakah kamu yakin ingin menghapus semua jawaban dan mengulang kuis dari awal?")) {
+                    if (confirm("Apakah Anda yakin ingin menghapus seluruh jawaban dan mengulang kuis dari awal?")) {
                         this.userAnswers = {};
-                        localStorage.removeItem(this.storageKey);
-                        this.recalculateScore();
+                        this.score = 0;
+                        this.answeredCount = 0;
                         this.currentIdx = 0;
+                        localStorage.removeItem(this.storageKey);
                         this.renderKaTeX();
                     }
                 },
 
-                renderKaTeX() {
-                    this.$nextTick(() => {
-                        if (window.renderMathInElement) {
-                            window.renderMathInElement(document.getElementById('katex-quiz-container') || document.body, {
-                                delimiters: [
-                                    {left: '$$', right: '$$', display: true},
-                                    {left: '\\(', right: '\\)', display: false}
-                                ],
-                                throwOnError: false
-                            });
-                        }
-                    });
-                }
+                // 30 Fresh & Varied Quadratic Factorization Questions
+                // Distribusi Kunci Jawaban Merata: A = 8, B = 7, C = 8, D = 7 (Acak dan tidak berpola)
+                questions: [
+                    {
+                        id: 1,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Dasar",
+                        question: "Faktorkanlah bentuk kuadratik berikut: \\(x^2 + 9x + 20\\)",
+                        options: ["\\((x + 2)(x + 10)\\)", "\\((x + 4)(x + 5)\\)", "\\((x + 1)(x + 20)\\)", "\\((x + 3)(x + 6)\\)"],
+                        correct: 1, // B
+                        explanation: "Cari dua angka yang jika dikalikan hasilnya = 20 dan jika dijumlahkan hasilnya = 9.<br>Angka yang memenuhi adalah <b>4</b> dan <b>5</b> (\\(4 \\times 5 = 20\\), \\(4 + 5 = 9\\)).<br>Maka faktornya adalah <b>\\((x + 4)(x + 5)\\)</b>."
+                    },
+                    {
+                        id: 2,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Dasar",
+                        question: "Bentuk faktorisasi dari \\(x^2 - 8x + 15\\) adalah...",
+                        options: ["\\((x + 3)(x + 5)\\)", "\\((x - 1)(x - 15)\\)", "\\((x - 3)(x - 5)\\)", "\\((x - 2)(x - 6)\\)"],
+                        correct: 2, // C
+                        explanation: "Hasil kali = +15 dan jumlah = -8.<br>Karena hasil kali positif dan jumlah negatif, kedua angka harus negatif: <b>-3</b> dan <b>-5</b>.<br>Maka faktornya adalah <b>\\((x - 3)(x - 5)\\)</b>."
+                    },
+                    {
+                        id: 3,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah bentuk: \\(x^2 + 4x - 21\\)",
+                        options: ["\\((x - 7)(x + 3)\\)", "\\((x + 7)(x - 3)\\)", "\\((x + 2)(x - 10)\\)", "\\((x + 21)(x - 1)\\)"],
+                        correct: 1, // B
+                        explanation: "Hasil kali = -21 dan jumlah = +4.<br>Dua angka yang cocok adalah <b>+7</b> dan <b>-3</b> (\\(7 \\times (-3) = -21\\), \\(7 + (-3) = 4\\)).<br>Maka faktornya adalah <b>\\((x + 7)(x - 3)\\)</b>."
+                    },
+                    {
+                        id: 4,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Hasil faktorisasi dari \\(x^2 - 5x - 24\\) adalah...",
+                        options: ["\\((x - 4)(x + 6)\\)", "\\((x - 3)(x + 8)\\)", "\\((x - 12)(x + 2)\\)", "\\((x + 3)(x - 8)\\)"],
+                        correct: 3, // D
+                        explanation: "Hasil kali = -24 dan jumlah = -5.<br>Pasangan angka yang tepat adalah <b>+3</b> dan <b>-8</b> (\\(3 \\times (-8) = -24\\), \\(3 + (-8) = -5\\)).<br>Maka faktornya adalah <b>\\((x + 3)(x - 8)\\)</b>."
+                    },
+                    {
+                        id: 5,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah bentuk aljabar: \\(2x^2 + 7x + 5\\)",
+                        options: ["\\((x + 1)(2x + 5)\\)", "\\((2x + 1)(x + 5)\\)", "\\((2x + 2)(x + 3)\\)", "\\((2x + 7)(x + 1)\\)"],
+                        correct: 0, // A
+                        explanation: "1. \\(a \\times c = 2 \\times 5 = 10\\).<br>2. Angka yang dikalikan = 10 dan dijumlahkan = 7 adalah <b>2 dan 5</b>.<br>3. Pecah suku tengah: \\(2x^2 + 2x + 5x + 5\\).<br>4. Kelompokkan: \\(2x(x + 1) + 5(x + 1) = \\mathbf{(x + 1)(2x + 5)}\\)."
+                    },
+                    {
+                        id: 6,
+                        category: "Selisih Kuadrat",
+                        difficulty: "Dasar",
+                        question: "Faktorkan bentuk selisih dua kuadrat: \\(x^2 - 49\\)",
+                        options: ["\\((x - 7)(x - 7)\\)", "\\((x + 7)(x + 7)\\)", "\\((x + 7)(x - 7)\\)", "\\((x - 49)(x + 1)\\)"],
+                        correct: 2, // C
+                        explanation: "Ingat rumus selisih dua kuadrat: \\(a^2 - b^2 = (a + b)(a - b)\\).<br>Karena \\(49 = 7^2\\), maka \\(x^2 - 49 = \\mathbf{(x + 7)(x - 7)}\\)."
+                    },
+                    {
+                        id: 7,
+                        category: "Kuadrat Sempurna",
+                        difficulty: "Sedang",
+                        question: "Bentuk kuadrat sempurna \\(x^2 + 12x + 36\\) jika difaktorkan menjadi...",
+                        options: ["\\((x - 6)^2\\)", "\\((x + 4)(x + 9)\\)", "\\((x + 12)(x + 3)\\)", "\\((x + 6)^2\\)"],
+                        correct: 3, // D
+                        explanation: "Dua angka yang dikalikan = 36 dan dijumlahkan = 12 adalah 6 dan 6.<br>Maka faktornya adalah \\((x + 6)(x + 6) = \\mathbf{(x + 6)^2}\\)."
+                    },
+                    {
+                        id: 8,
+                        category: "FPB & Kuadratik Kombinasi",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah secara lengkap: \\(3x^2 + 18x + 24\\)",
+                        options: ["\\(3(x + 2)(x + 4)\\)", "\\((3x + 6)(x + 4)\\)", "\\(3(x + 1)(x + 8)\\)", "\\((3x + 12)(x + 2)\\)"],
+                        correct: 0, // A
+                        explanation: "Faktorkan FPB (yaitu 3) terlebih dahulu:<br>\\(3(x^2 + 6x + 8)\\).<br>Lalu faktorkan \\(x^2 + 6x + 8\\) menjadi \\((x + 2)(x + 4)\\).<br>Hasil akhir = <b>\\(3(x + 2)(x + 4)\\)</b>."
+                    },
+                    {
+                        id: 9,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah: \\(3x^2 - 10x + 8\\)",
+                        options: ["\\((3x - 2)(x - 4)\\)", "\\((3x - 4)(x - 2)\\)", "\\((3x - 8)(x - 1)\\)", "\\((3x + 2)(x - 4)\\)"],
+                        correct: 1, // B
+                        explanation: "1. \\(a \\times c = 3 \\times 8 = 24\\).<br>2. Dua angka yang dikalikan = 24 dan dijumlahkan = -10 adalah <b>-6 dan -4</b>.<br>3. Pecah suku tengah: \\(3x^2 - 6x - 4x + 8 = 3x(x - 2) - 4(x - 2)\\).<br>4. Hasil akhir = <b>\\((3x - 4)(x - 2)\\)</b>."
+                    },
+                    {
+                        id: 10,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Dasar",
+                        question: "Faktorkanlah bentuk kuadratik: \\(x^2 - 9x + 14\\)",
+                        options: ["\\((x - 1)(x - 14)\\)", "\\((x + 2)(x + 7)\\)", "\\((x - 3)(x - 6)\\)", "\\((x - 2)(x - 7)\\)"],
+                        correct: 3, // D
+                        explanation: "Hasil kali = +14 dan jumlah = -9.<br>Angka yang cocok adalah <b>-2</b> dan <b>-7</b>.<br>Maka faktornya = <b>\\((x - 2)(x - 7)\\)</b>."
+                    },
+                    {
+                        id: 11,
+                        category: "Selisih Kuadrat",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah bentuk: \\(4x^2 - 25\\)",
+                        options: ["\\((2x - 5)^2\\)", "\\((2x + 5)(2x - 5)\\)", "\\((4x - 5)(x + 5)\\)", "\\((2x + 25)(2x - 1)\\)"],
+                        correct: 1, // B
+                        explanation: "Bentuk selisih dua kuadrat \\(a^2 - b^2\\) dengan \\(a = 2x\\) dan \\(b = 5\\).<br>\\((2x)^2 - (5)^2 = \\mathbf{(2x + 5)(2x - 5)}\\)."
+                    },
+                    {
+                        id: 12,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah: \\(x^2 + 3x - 40\\)",
+                        options: ["\\((x - 5)(x + 8)\\)", "\\((x + 5)(x - 8)\\)", "\\((x + 4)(x - 10)\\)", "\\((x - 2)(x + 20)\\)"],
+                        correct: 0, // A
+                        explanation: "Hasil kali = -40 dan jumlah = +3.<br>Angka yang tepat adalah <b>+8</b> dan <b>-5</b>.<br>Maka faktornya = <b>\\((x - 5)(x + 8)\\)</b>."
+                    },
+                    {
+                        id: 13,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Bentuk faktorisasi dari \\(2x^2 - x - 6\\) adalah...",
+                        options: ["\\((2x - 3)(x + 2)\\)", "\\((2x - 6)(x + 1)\\)", "\\((2x + 3)(x - 2)\\)", "\\((2x + 1)(x - 6)\\)"],
+                        correct: 2, // C
+                        explanation: "1. \\(a \\times c = 2 \\times (-6) = -12\\).<br>2. Dikalikan = -12, dijumlahkan = -1 ➔ <b>-4 dan +3</b>.<br>3. \\(2x^2 - 4x + 3x - 6 = 2x(x - 2) + 3(x - 2) = \\mathbf{(2x + 3)(x - 2)}\\)."
+                    },
+                    {
+                        id: 14,
+                        category: "Konsep Luas Geometri",
+                        difficulty: "Sedang",
+                        question: "Sebuah bidang berbentuk persegi panjang memiliki luas \\(x^2 + 11x + 28\\). Panjang dan lebarnya berturut-turut adalah...",
+                        options: ["\\((x + 2)\\) dan \\((x + 14)\\)", "\\((x + 3)\\) dan \\((x + 8)\\)", "\\((x + 1)\\) dan \\((x + 28)\\)", "\\((x + 4)\\) dan \\((x + 7)\\)"],
+                        correct: 3, // D
+                        explanation: "Faktorkan luas tanah \\(x^2 + 11x + 28\\):<br>Dikalikan = 28, dijumlahkan = 11 ➔ <b>4 dan 7</b>.<br>Maka ukuran panjang dan lebar adalah <b>\\((x + 4)\\) dan \\((x + 7)\\)</b>."
+                    },
+                    {
+                        id: 15,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Dasar",
+                        question: "Faktorkanlah: \\(x^2 - 10x + 25\\)",
+                        options: ["\\((x - 5)^2\\)", "\\((x + 5)^2\\)", "\\((x - 25)(x - 1)\\)", "\\((x - 2)(x - 8)\\)"],
+                        correct: 0, // A
+                        explanation: "Bentuk kuadrat sempurna: dikalikan = 25, dijumlahkan = -10.<br>Angka yang memenuhi = -5 dan -5.<br>Maka faktornya = \\((x - 5)(x - 5) = \\mathbf{(x - 5)^2}\\)."
+                    },
+                    {
+                        id: 16,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah bentuk kuadratik: \\(5x^2 + 13x - 6\\)",
+                        options: ["\\((5x - 3)(x + 2)\\)", "\\((5x + 3)(x - 2)\\)", "\\((5x - 2)(x + 3)\\)", "\\((5x + 1)(x - 6)\\)"],
+                        correct: 2, // C
+                        explanation: "1. \\(a \\times c = 5 \\times (-6) = -30\\).<br>2. Dikalikan = -30, dijumlahkan = +13 ➔ <b>+15 dan -2</b>.<br>3. \\(5x^2 + 15x - 2x - 6 = 5x(x + 3) - 2(x + 3) = \\mathbf{(5x - 2)(x + 3)}\\)."
+                    },
+                    {
+                        id: 17,
+                        category: "FPB & Kuadratik Kombinasi",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah bentuk: \\(2x^2 - 18\\)",
+                        options: ["\\((2x - 9)(x + 2)\\)", "\\(2(x + 3)(x - 3)\\)", "\\(2(x - 3)^2\\)", "\\((2x + 6)(x - 3)\\)"],
+                        correct: 1, // B
+                        explanation: "Keluarkan FPB = 2 terlebih dahulu:<br>\\(2(x^2 - 9)\\).<br>Lalu gunakan selisih kuadrat untuk \\(x^2 - 9 = (x + 3)(x - 3)\\).<br>Hasil akhir = <b>\\(2(x + 3)(x - 3)\\)</b>."
+                    },
+                    {
+                        id: 18,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Hasil faktorisasi dari \\(x^2 + x - 30\\) adalah...",
+                        options: ["\\((x - 6)(x + 5)\\)", "\\((x + 6)(x - 5)\\)", "\\((x + 10)(x - 3)\\)", "\\((x - 15)(x + 2)\\)"],
+                        correct: 1, // B
+                        explanation: "Hasil kali = -30 dan jumlah = +1.<br>Angka yang tepat adalah <b>+6</b> dan <b>-5</b>.<br>Maka faktornya = <b>\\((x + 6)(x - 5)\\)</b>."
+                    },
+                    {
+                        id: 19,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah bentuk: \\(4x^2 + 8x + 3\\)",
+                        options: ["\\((4x + 1)(x + 3)\\)", "\\((2x + 3)(x + 1)\\)", "\\((2x + 1)(2x + 3)\\)", "\\((4x + 3)(x + 1)\\)"],
+                        correct: 2, // C
+                        explanation: "1. \\(a \\times c = 4 \\times 3 = 12\\).<br>2. Dikalikan = 12, dijumlahkan = 8 ➔ <b>2 dan 6</b>.<br>3. \\(4x^2 + 2x + 6x + 3 = 2x(2x + 1) + 3(2x + 1) = \\mathbf{(2x + 1)(2x + 3)}\\)."
+                    },
+                    {
+                        id: 20,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah: \\(x^2 - 12x + 27\\)",
+                        options: ["\\((x - 3)(x - 9)\\)", "\\((x - 2)(x - 10)\\)", "\\((x + 3)(x + 9)\\)", "\\((x - 1)(x - 27)\\)"],
+                        correct: 0, // A
+                        explanation: "Hasil kali = +27 dan jumlah = -12.<br>Kedua angka harus negatif: <b>-3</b> dan <b>-9</b>.<br>Maka faktornya = <b>\\((x - 3)(x - 9)\\)</b>."
+                    },
+                    {
+                        id: 21,
+                        category: "Selisih Kuadrat",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah bentuk: \\(9x^2 - 64\\)",
+                        options: ["\\((3x - 8)^2\\)", "\\((9x - 8)(x + 8)\\)", "\\((3x + 8)(3x - 8)\\)", "\\((3x + 64)(3x - 1)\\)"],
+                        correct: 2, // C
+                        explanation: "Bentuk selisih dua kuadrat dengan \\(a = 3x\\) dan \\(b = 8\\).<br>\\((3x)^2 - (8)^2 = \\mathbf{(3x + 8)(3x - 8)}\\)."
+                    },
+                    {
+                        id: 22,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Bentuk faktorisasi dari \\(x^2 - 2x - 35\\) adalah...",
+                        options: ["\\((x + 7)(x - 5)\\)", "\\((x - 7)(x + 5)\\)", "\\((x - 35)(x + 1)\\)", "\\((x - 5)(x - 2)\\)"],
+                        correct: 1, // B
+                        explanation: "Hasil kali = -35 dan jumlah = -2.<br>Angka yang tepat adalah <b>-7</b> dan <b>+5</b>.<br>Maka faktornya = <b>\\((x - 7)(x + 5)\\)</b>."
+                    },
+                    {
+                        id: 23,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah: \\(6x^2 + 7x - 3\\)",
+                        options: ["\\((6x - 1)(x + 3)\\)", "\\((3x + 3)(2x - 1)\\)", "\\((2x - 3)(3x + 1)\\)", "\\((2x + 3)(3x - 1)\\)"],
+                        correct: 3, // D
+                        explanation: "1. \\(a \\times c = 6 \\times (-3) = -18\\).<br>2. Dikalikan = -18, dijumlahkan = +7 ➔ <b>+9 dan -2</b>.<br>3. \\(6x^2 + 9x - 2x - 3 = 3x(2x + 3) - 1(2x + 3) = \\mathbf{(2x + 3)(3x - 1)}\\)."
+                    },
+                    {
+                        id: 24,
+                        category: "FPB & Kuadratik Kombinasi",
+                        difficulty: "Sedang",
+                        question: "Faktorkanlah secara menyeluruh: \\(5x^2 - 20x + 20\\)",
+                        options: ["\\(5(x - 2)^2\\)", "\\(5(x + 2)^2\\)", "\\((5x - 10)(x - 2)\\)", "\\(5(x - 4)(x + 1)\\)"],
+                        correct: 0, // A
+                        explanation: "Keluarkan FPB = 5 terlebih dahulu:<br>\\(5(x^2 - 4x + 4)\\).<br>Lalu faktorkan kuadrat sempurna \\(x^2 - 4x + 4 = (x - 2)^2\\).<br>Hasil akhir = <b>\\(5(x - 2)^2\\)</b>."
+                    },
+                    {
+                        id: 25,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Dasar",
+                        question: "Faktorkanlah: \\(x^2 + 10x + 21\\)",
+                        options: ["\\((x + 1)(x + 21)\\)", "\\((x + 2)(x + 10)\\)", "\\((x + 3)(x + 7)\\)", "\\((x + 4)(x + 6)\\)"],
+                        correct: 2, // C
+                        explanation: "Hasil kali = 21 dan jumlah = 10.<br>Angka yang tepat adalah <b>3</b> dan <b>7</b>.<br>Maka faktornya = <b>\\((x + 3)(x + 7)\\)</b>."
+                    },
+                    {
+                        id: 26,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Hasil faktorisasi dari \\(3x^2 + 14x + 8\\) adalah...",
+                        options: ["\\((3x + 2)(x + 4)\\)", "\\((3x + 4)(x + 2)\\)", "\\((3x + 8)(x + 1)\\)", "\\((3x + 1)(x + 8)\\)"],
+                        correct: 0, // A
+                        explanation: "1. \\(a \\times c = 3 \\times 8 = 24\\).<br>2. Dikalikan = 24, dijumlahkan = 14 ➔ <b>12 dan 2</b>.<br>3. \\(3x^2 + 12x + 2x + 8 = 3x(x + 4) + 2(x + 4) = \\mathbf{(3x + 2)(x + 4)}\\)."
+                    },
+                    {
+                        id: 27,
+                        category: "Bentuk x² + bx + c",
+                        difficulty: "Sedang",
+                        question: "Faktorkan bentuk kuadratik: \\(x^2 - 13x + 42\\)",
+                        options: ["\\((x - 3)(x - 14)\\)", "\\((x - 6)(x - 7)\\)", "\\((x + 6)(x + 7)\\)", "\\((x - 1)(x - 42)\\)"],
+                        correct: 1, // B
+                        explanation: "Cari dua angka yang dikalikan = +42 dan dijumlahkan = -13.<br>Angka yang cocok adalah <b>-6</b> dan <b>-7</b>.<br>Maka faktornya = <b>\\((x - 6)(x - 7)\\)</b>."
+                    },
+                    {
+                        id: 28,
+                        category: "Selisih Kuadrat",
+                        difficulty: "Sedang",
+                        question: "Bentuk faktorisasi dari \\(16x^2 - 81\\) adalah...",
+                        options: ["\\((4x - 9)^2\\)", "\\((16x - 9)(x + 9)\\)", "\\((4x + 9)(4x - 9)\\)", "\\((4x + 81)(4x - 1)\\)"],
+                        correct: 2, // C
+                        explanation: "Bentuk selisih kuadrat \\(a^2 - b^2\\) dengan \\(a = 4x\\) dan \\(b = 9\\).<br>\\((4x)^2 - (9)^2 = \\mathbf{(4x + 9)(4x - 9)}\\)."
+                    },
+                    {
+                        id: 29,
+                        category: "Bentuk ax² + bx + c (a ≠ 1)",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah bentuk: \\(2x^2 - 9x + 10\\)",
+                        options: ["\\((2x - 10)(x - 1)\\)", "\\((2x - 2)(x - 5)\\)", "\\((2x + 5)(x - 2)\\)", "\\((2x - 5)(x - 2)\\)"],
+                        correct: 3, // D
+                        explanation: "1. \\(a \\times c = 2 \\times 10 = 20\\).<br>2. Dikalikan = 20, dijumlahkan = -9 ➔ <b>-5 dan -4</b>.<br>3. \\(2x^2 - 4x - 5x + 10 = 2x(x - 2) - 5(x - 2) = \\mathbf{(2x - 5)(x - 2)}\\)."
+                    },
+                    {
+                        id: 30,
+                        category: "FPB & Kuadratik Kombinasi",
+                        difficulty: "Tinggi",
+                        question: "Faktorkanlah secara menyeluruh: \\(4x^2 - 16x - 48\\)",
+                        options: ["\\(4(x - 6)(x + 2)\\)", "\\(4(x + 6)(x - 2)\\)", "\\((4x - 24)(x + 2)\\)", "\\(4(x - 12)(x + 1)\\)"],
+                        correct: 0, // A
+                        explanation: "1. Keluarkan FPB = 4: \\(4(x^2 - 4x - 12)\\).<br>2. Faktorkan \\(x^2 - 4x - 12\\): Dikalikan = -12, dijumlahkan = -4 ➔ <b>-6 dan +2</b>.<br>3. Hasil akhir = <b>\\(4(x - 6)(x + 2)\\)</b>."
+                    }
+                ]
             }
         }
     </script>
